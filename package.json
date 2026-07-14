@@ -1,0 +1,45 @@
+{
+  "name": "free-music-player",
+  "version": "1.0.0",
+  "description": "Free Music Player",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win msi"
+  },
+  "build": {
+    "win": {
+      "target": "msi",
+      "icon": "icon.ico"
+    },
+    "msi": {
+      "oneClick": false
+    },
+    "forceCodeSigning": false,
+    "asar": true,
+    "extraResources": [
+      {
+        "from": "bg.webm",
+        "to": "bg.webm"
+      }
+    ],
+    "files": [
+      "app.js",
+      "hls.min.js",
+      "index.html",
+      "main.js",
+      "package.json",
+      "preload.js",
+      "styles.css",
+      "wave.js",
+      "icon.ico"
+    ]
+  },
+  "author": "Free Music Player",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.0.0",
+    "rcedit": "^5.0.2"
+  }
+}

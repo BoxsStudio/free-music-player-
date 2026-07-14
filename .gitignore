@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dist-packaged/
+zapret/
+*.log
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+bg.webm
