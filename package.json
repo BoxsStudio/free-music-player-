@@ -14,7 +14,7 @@
       "icon": "icon.ico"
     },
     "linux": {
-      "target": ["AppImage", "deb"],
+      "target": ["deb", "AppImage"],
       "icon": "icon.png",
       "category": "Audio"
     },
