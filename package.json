@@ -5,12 +5,18 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder --win msi"
+    "build": "electron-builder --win msi",
+    "build:linux": "electron-builder --linux"
   },
   "build": {
     "win": {
       "target": "msi",
       "icon": "icon.ico"
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "icon": "icon.png",
+      "category": "Audio"
     },
     "msi": {
       "oneClick": false
@@ -35,7 +41,10 @@
       "icon.ico"
     ]
   },
-  "author": "Free Music Player",
+  "author": {
+    "name": "Free Music Player",
+    "email": "freemusicplayer@example.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "electron": "^31.0.0",
