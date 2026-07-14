@@ -1,5 +1,7 @@
 # Free Music Player
+![alt text](https://github.com/BoxsStudio/free-music-player-/blob/master/Снимок%20экрана%202026-07-15%20005823.png?raw=true)
 
+![alt text](https://github.com/BoxsStudio/free-music-player-/blob/master/Снимок%20экрана%202026-07-15%20005837.png?raw=true)
 Десктопный аудиоплеер на Electron с поддержкой HitMoZ и SoundCloud.
 
 ## Возможности
